@@ -1,0 +1,77 @@
+.navbar {
+  background-color: #26374B;
+}
+.navbar .navbar-brand {
+  padding-left: 30px;
+  font-size: 24px;
+}
+.navbar a {
+  color: #C8CDD2;
+  font-size: 20px;
+}
+.navbar a:hover {
+  color: whitesmoke;
+}
+.navbar .navbar-toggler {
+  background-color: whitesmoke;
+}
+
+.loginForm {
+  margin: auto;
+  padding: 45px;
+  max-width: 500px;
+  border: 1px solid #C8CDD2;
+  border-radius: 7px;
+}
+
+footer {
+  background-color: #26374B;
+}
+footer a {
+  color: aliceblue;
+}
+
+.box-background {
+  background-color: #C8CDD2;
+  color: #26374B;
+  padding: 10px;
+  text-align: center;
+}
+
+.stat-box-header {
+  margin: 25px auto 5px;
+  text-align: center;
+  background-color: #26374B;
+  color: #C8CDD2;
+}
+
+.monitored-project-info {
+  width: 100%;
+  margin: 20px auto;
+  border: 1px solid #26374B;
+  border-radius: 5px;
+  padding: 17px 5px;
+}
+
+.mainBtn {
+  padding: 5px 20px;
+  border-radius: 5px;
+  background: #26374B;
+  color: aliceblue;
+  font-size: 17px;
+}
+.mainBtn:hover {
+  background-color: #384c64;
+  box-shadow: 0 0 13px 0 #384c64;
+}
+
+.account-box-stat {
+  border: 1px solid gray;
+  margin: 5px 35px;
+  padding-top: 15px;
+  background: aliceblue;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 0 #bcc8d2;
+}
+
+/*# sourceMappingURL=style.css.map */
