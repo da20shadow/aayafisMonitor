@@ -67,7 +67,7 @@
 
                         <div class="col-4">
                             <a href="#" class="d-flex justify-content-end">
-                                <img src="https://i.ibb.co/VmD42Z8/image.png" width="90px" height="30px"
+                                <img src="assets/img/hmetrics.png" width="90px" height="30px"
                                      alt="H-metrics Project info">
                             </a>
                         </div>
@@ -126,7 +126,7 @@
 
                         <div class="col-4">
                             <a href="#" class="d-flex justify-content-end">
-                                <img src="https://i.ibb.co/VmD42Z8/image.png" width="90px" height="30px"
+                                <img src="assets/img/hmetrics.png" width="90px" height="30px"
                                      alt="H-metrics Project info">
                             </a>
                         </div>
@@ -185,7 +185,7 @@
 
                         <div class="col-4">
                             <a href="#" class="d-flex justify-content-end">
-                                <img src="https://i.ibb.co/VmD42Z8/image.png" width="90px" height="30px"
+                                <img src="assets/img/hmetrics.png" width="90px" height="30px"
                                      alt="H-metrics Project info">
                             </a>
                         </div>
@@ -244,7 +244,7 @@
 
                         <div class="col-4">
                             <a href="#" class="d-flex justify-content-end">
-                                <img src="https://i.ibb.co/VmD42Z8/image.png" width="90px" height="30px"
+                                <img src="assets/img/hmetrics.png" width="90px" height="30px"
                                      alt="H-metrics Project info">
                             </a>
                         </div>
