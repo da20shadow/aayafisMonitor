@@ -6,7 +6,7 @@
 
     <div class="row mt-4">
 
-        <div class="col-6">
+        <div class="col-12 col-lg-6 mt-5">
 
             <form class="was-validated loginForm bg-light shadow-lg">
 
@@ -31,7 +31,7 @@
 
         </div>
 
-        <div class="col-6">
+        <div class="col-12 col-lg-6 mt-5">
 
             <form class="was-validated loginForm bg-light shadow-lg">
 
@@ -54,7 +54,7 @@
     </div>
 
     <!-- Advertising Banner 728x90 -->
-    <div class="row m-auto">
+    <div class="row m-auto mt-5">
         <div class="border-3 border-dark shadow-lg"
              style="margin:30px auto; width: 728px; height: 90px;">
             <p class="text-center mt-4">Advertising banner 728x90</p>

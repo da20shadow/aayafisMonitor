@@ -3,7 +3,7 @@
     <div class="row">
 
         <!--Investment Projects List -->
-        <div class="col-12 col-md-9">
+        <div class="col-12 col-lg-9">
 
             <!-- Advertising Banner 728x90 -->
             <div class="row m-auto">
@@ -258,7 +258,7 @@
         </div>
 
         <!--Right Sidebar-->
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-lg-3">
 
             <!--Advertising banner 300x250 -->
             <div class="border border-3 mt-3 m-auto"

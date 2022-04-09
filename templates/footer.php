@@ -9,14 +9,15 @@
     <footer class="py-3 my-4">
 
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Home</a></li>
+            <li class="nav-item"><a href="index.php" class="nav-link px-2 text-light">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Terms</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Privacy policy</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">FAQs</a></li>
+            <li class="nav-item"><a href="faq.php" class="nav-link px-2 text-light">FAQs</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-light">About</a></li>
+            <li class="nav-item"><a href="contact.php" class="nav-link px-2 text-light">Contact us</a></li>
         </ul>
 
-        <p class="text-center text-light">©2022 AyaafisMonitor.com - All Rights Reserved!</p>
+        <p class="text-center text-light">©<?php echo htmlspecialchars(date('Y')) ?> AyaafisMonitor.com - All Rights Reserved!</p>
     </footer>
 </div>
 <!-- JavaScript Bundle with Popper -->

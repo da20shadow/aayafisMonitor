@@ -30,9 +30,6 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.php">Contact us</a>
-                    </li>
                     <?php if (isset($_SESSION['username'])) { ?>
                     <li class="nav-item">
                         <a class="nav-link" href="account.php">Account</a>
@@ -44,12 +41,16 @@
                         <a class="nav-link" href="logout.php">Logout</a>
                     </li>
                     <?php }else{ ?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.php">Contact us</a>
+                        </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login.php">Login</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="register.php">Register</a>
                     </li>
+
                     <?php } ?>
 
                 </ul>
