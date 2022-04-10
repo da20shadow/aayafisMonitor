@@ -1,4 +1,5 @@
 <?php
+$title = "Account";
 include_once ("templates/header.php");
 if (isset($_SESSION['username'])){
 

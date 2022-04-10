@@ -15,12 +15,13 @@ regForm.addEventListener("submit",function (e){
     if (isDataValid){
         //Sending data to PHP if data is valid!
         const url = "../includes/_register_user.php";
-        sendFormDataToPHP(url,'POST',regFormData);
-        setTimeout(function(){
-            window.location.replace("login.php");
-        }, 1300);
+
+        sendFormDataToPHP(url,regFormData,"successReg","login.php");
+
+
     }else{
-        displayError("Registration Error! Please, try again!")
+        document.getElementById('successReg')
+            .innerHTML = displayError("Registration Error! Please, try again!");
     }
 
 })

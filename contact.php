@@ -1,6 +1,6 @@
 <?php
+$title = "Contact Us";
 include_once ("templates/header.php");
-
 ?>
 <div class="container my-5">
     <h1 class="text-center">Contacts</h1>

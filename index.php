@@ -1,5 +1,5 @@
 <?php
-
+$title = "Homepage";
 include_once ("templates/header.php");
 
 include_once ("templates/investment_projects.php");

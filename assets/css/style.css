@@ -32,6 +32,14 @@
   border-radius: 7px;
 }
 
+.regForm {
+  margin: auto;
+  padding: 45px;
+  max-width: 70%;
+  border: 1px solid #C8CDD2;
+  border-radius: 7px;
+}
+
 footer {
   background-color: #26374B;
 }

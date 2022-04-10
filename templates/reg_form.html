@@ -6,44 +6,61 @@
 
     <h1 class="text-center my-3">Register</h1>
 
-    <form id="regForm" class="was-validated loginForm bg-light shadow-lg">
-        <div class="mb-3">
+    <form id="regForm" class="was-validated row regForm bg-light shadow-lg">
+        <div class="mb-3 col-12 col-lg-6">
             <label for="usernameValidation" class="form-label">Username:</label>
             <input type="text" class="form-control is-invalid" name="username"
                    id="usernameValidation" placeholder="Username" required
                    pattern="^[a-zA-Z]+[a-zA-Z0-9_]{4,45}$" />
         </div>
 
-        <div class="mb-3">
+        <div class="mb-3 col-12 col-lg-6">
             <label for="emailValidation" class="form-label">Email:</label>
             <input type="email" class="form-control is-invalid" name="email"
                    id="emailValidation" placeholder="Email" required
                    pattern="^[a-z]+[a-z0-9_.]*[@][a-z]{3,}[.][a-z]{2,4}$" />
         </div>
 
-        <div class="mb-3">
+        <div class="mb-3 col-12 col-lg-6">
+            <label for="pm" class="form-label">PerfectMoney:</label>
+            <input type="text" class="form-control is-invalid" name="pm"
+                   id="pm" placeholder="U12345667" required
+                   pattern="^[U]+[0-9]{5,17}$" />
+        </div>
+
+        <div class="mb-3 col-12 col-lg-6">
+            <label for="payeer" class="form-label">Payeer:</label>
+            <input type="text" class="form-control is-invalid" name="payeer"
+                   id="payeer" placeholder="P12345667" required
+                   pattern="^[P]+[0-9]{5,17}$" />
+        </div>
+
+        <div class="mb-3 col-12 col-lg-6">
             <label for="passwordValidation" class="form-label">Password:</label>
             <input type="password" class="form-control is-invalid" name="password"
                    id="passwordValidation" placeholder="Password" required
                     pattern="^\S{8,45}$" />
         </div>
 
-        <div class="mb-3">
+        <div class="mb-3 col-12 col-lg-6">
             <label for="rePasswordValidation" class="form-label">Re-Password:</label>
             <input type="password" class="form-control is-invalid" name="re_password"
                    id="rePasswordValidation" placeholder="Re-Password" required
                    pattern="^\S{8,45}$" />
         </div>
 
-        <div class="form-check mb-3">
+        <div class="form-check mb-3 col-12 col-lg-6">
             <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
             <label class="form-check-label" for="validationFormCheck1">I accept the terms and privacy policy</label>
             <div class="invalid-feedback">You must agree before registering.</div>
         </div>
 
-        <span>Already a member? </span><a href="login.php">Login</a>
-        <br>
+        <div class="form-check mb-3 col-12 col-lg-6">
+            <span>Already a member? </span><a href="login.php">Login</a>
+        </div>
+
         <input id="regBtn" class="mainBtn mt-3" type="submit" value="Register">
+
     </form>
 
     <!-- Advertising Banner 728x90 -->

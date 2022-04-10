@@ -13,15 +13,12 @@ loginForm.addEventListener('submit',function (e){
     if (isLoginDetailsValid){
         //Send Login Details to PHP
         const url = "../includes/_login_user.php";
-        let successfullyLogged = sendFormDataToPHP(url,'POST',loginFormData);
 
-        if (successfullyLogged){
-            setTimeout(function(){
-                window.location.replace("account.php");
-            }, 1100);
-        }
+        sendFormDataToPHP(url,loginFormData,"successLog","account.php");
+
     }else{
-        displayError("Login Error! Invalid Email or Password! Please, try again!")
+        document.getElementById('successLog')
+            .innerHTML = displayError("Login Error! Invalid Email or Password! Please, try again!");
     }
 
 })

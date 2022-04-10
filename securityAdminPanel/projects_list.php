@@ -30,7 +30,7 @@ $numberOfListedProjects = 3;
                     <h6><span class="badge bg-success">PAYING</span></h6>
                 </td>
                 <td class="text-center">
-                    <a href="edit_project.php" class="btn btn-primary bg-gradient btn-sm">Edit</a>
+                    <a href="edit_project.php" class="btn btn-secondary bg-gradient btn-sm">Edit</a>
                     <button class="btn btn-danger bg-gradient btn-sm">Delete</button>
                 </td>
             </tr>
@@ -42,7 +42,7 @@ $numberOfListedProjects = 3;
                     <h6><span class="badge bg-warning">PROBLEM</span></h6>
                 </td>
                 <td class="text-center">
-                    <a href="edit_project.php" class="btn btn-primary bg-gradient btn-sm">Edit</a>
+                    <a href="edit_project.php" class="btn btn-secondary bg-gradient btn-sm">Edit</a>
                     <button class="btn btn-danger bg-gradient btn-sm">Delete</button>
                 </td>
 
@@ -55,7 +55,7 @@ $numberOfListedProjects = 3;
                     <h6><span class="badge bg-danger">NOT PAYING</span></h6>
                 </td>
                 <td class="text-center">
-                    <a href="edit_project.php" class="btn btn-primary bg-gradient btn-sm">Edit</a>
+                    <a href="edit_project.php" class="btn btn-secondary bg-gradient btn-sm">Edit</a>
                     <button class="btn btn-danger bg-gradient btn-sm">Delete</button>
                 </td>
             </tr>
