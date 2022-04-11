@@ -1,4 +1,5 @@
 <?php
+$title = "Pending RCB Requests";
 include ("admin_header.php");
 $numberOfRCBRequests = 3;
 ?>

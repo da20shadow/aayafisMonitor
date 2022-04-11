@@ -1,4 +1,5 @@
 <?php
+$title = "Projects List";
 include ("admin_header.php");
 $numberOfListedProjects = 3;
 ?>

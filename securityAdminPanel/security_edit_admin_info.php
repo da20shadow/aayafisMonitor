@@ -1,11 +1,13 @@
+<?php
+$title = "Admin Settings";
+include "admin_header.php";
+?>
 <div class="container mt-5">
 
-    <h1 class="text-center">Edit Account</h1>
-
-    <hr class="divider">
+    <h1 class="text-center my-3">Administrator Settings</h1>
 
     <div class="row mt-4">
-
+        <!--Change Password Form -->
         <div class="col-12 col-lg-6 mt-5">
 
             <form class="was-validated loginForm bg-light shadow-lg">
@@ -25,7 +27,6 @@
                     <input type="password" class="form-control is-invalid" id="currentPass" placeholder="Current Password" required/>
                 </div>
 
-                <br>
                 <input class="mainBtn mt-3" type="submit" value="Save Changes">
             </form>
 
@@ -35,18 +36,23 @@
 
             <form class="was-validated loginForm bg-light shadow-lg">
 
-                <h3 class="text-center mb-4">Change Payment Processor</h3>
-
+                <h4 class="text-center">Change Email</h4>
                 <div class="mb-3">
-                    <label for="perfectMoney" class="form-label">PerfectMoney Wallet:</label>
-                    <input type="text" class="form-control is-invalid" id="perfectMoney" placeholder="Example: U1234567" required/>
+                    <label for="emailValidation" class="form-label">New Email:</label>
+                    <input type="email" class="form-control is-invalid" name="email"
+                           id="emailValidation" placeholder="Email" required/>
                 </div>
                 <div class="mb-3">
-                    <label for="payeer" class="form-label">Payeer Wallet:</label>
-                    <input type="text" class="form-control is-invalid" id="payeer" placeholder="Example: P123456" required/>
+                    <label for="email_again" class="form-label">New Email Again:</label>
+                    <input type="email" class="form-control is-invalid" name="email_again"
+                           id="email_again" placeholder="Email Again" required/>
+                </div>
+                <div class="mb-3">
+                    <label for="passwordValidation" class="form-label">Password:</label>
+                    <input type="password" class="form-control is-invalid" name="password"
+                           id="passwordValidation" placeholder="Password" required/>
                 </div>
 
-                <br>
                 <input class="mainBtn mt-3" type="submit" value="Save Changes">
             </form>
         </div>
@@ -54,3 +60,9 @@
     </div>
 
 </div>
+
+<script src="assets/js/notifications.js"></script>
+<script src="assets/js/formsValidation.js"></script>
+<script src="core/ajax/sendFormDataToPHP.js"></script>
+<script src="core/ajax/userLogin.js"></script>
+

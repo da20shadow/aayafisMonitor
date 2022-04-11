@@ -1,4 +1,5 @@
 <?php
+$title = "Admin Dashboard";
 include ("admin_header.php");
 $paidRCB = "45"; //get from rcb requests table all
 $pendingRCB = "3"; //get from rcb requests table all

@@ -1,5 +1,13 @@
 <div class="container">
 
+    <!-- Advertising Banner 728x90 -->
+    <div class="row m-auto">
+        <div class="border-3 border-dark shadow-lg"
+             style="margin:30px auto; width: 728px; height: 90px;">
+            <p class="text-center mt-4">Advertising banner 728x90</p>
+        </div>
+    </div>
+
     <p class="text-center fst-italic" style="font-size:13px;">DISCLAIMER: We do not own or promote any programs listed here.
         The information provided here is for your own use.
         Some programs, investments or any listings here may be illegal depending on your country's laws.

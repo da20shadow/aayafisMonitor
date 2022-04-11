@@ -1,4 +1,5 @@
 <?php
+$title = "Add New Project";
 include ("admin_header.php");
 ?>
 <div class="container">

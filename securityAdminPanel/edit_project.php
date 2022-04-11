@@ -1,4 +1,5 @@
 <?php
+$title = "Edit Project";
 include ("admin_header.php");
 $projectName = "SiteName";
 $projectURL = "https://sitename.com/ref=aayafi";

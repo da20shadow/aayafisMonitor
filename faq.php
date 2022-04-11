@@ -14,15 +14,13 @@ include_once ("templates/header.php");
                 <button class="accordion-button collapsed" type="button"
                         data-bs-toggle="collapse" data-bs-target="#faqCollapseOne"
                         aria-expanded="false" aria-controls="faqCollapseOne">
-                    Accordion Item #1
+                    What is a monitor?
                 </button>
             </h2>
             <div id="faqCollapseOne" class="accordion-collapse collapse"
                  aria-labelledby="faqHeadingOne" data-bs-parent="#faqFlushContainer">
                 <div class="accordion-body">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the <code>.accordion-flush</code> class.
-                    This is the first item's accordion body.
+                    It is a website that keeps an eye on HYIP sites to give you details about them.
                 </div>
             </div>
         </div>
@@ -32,16 +30,14 @@ include_once ("templates/header.php");
                 <button class="accordion-button collapsed" type="button"
                         data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo"
                         aria-expanded="false" aria-controls="faqCollapseTwo">
-                    Accordion Item #2
+                    What is an HYIP site?
                 </button>
             </h2>
             <div id="faqCollapseTwo" class="accordion-collapse collapse"
                  aria-labelledby="faqHeadingTwo" data-bs-parent="#faqFlushContainer">
                 <div class="accordion-body">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the faq.
-                    This is the second item's accordion body. Let's imagine
-                    this being filled with some actual content.
+                    HYIP are the first letters of the words ( High yield investment project),
+                    Which is a website that accepts investments from members and gives them fixed interest in return.
                 </div>
             </div>
         </div>
@@ -51,18 +47,15 @@ include_once ("templates/header.php");
                 <button class="accordion-button collapsed" type="button"
                         data-bs-toggle="collapse" data-bs-target="#faqCollapseThree"
                         aria-expanded="false" aria-controls="faqCollapseThree">
-                    Accordion Item #3
+                    Why do we need a monitor for HYIP sites?
                 </button>
             </h2>
             <div id="faqCollapseThree" class="accordion-collapse collapse"
                  aria-labelledby="faqHeadingThree" data-bs-parent="#faqFlushContainer">
                 <div class="accordion-body">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the faq.
-                    This is the third item's accordion body. Nothing more exciting
-                    happening here in terms of content, but just filling up the
-                    space to make it look, at least at first glance, a bit more
-                    representative of how this would look in a real-world application.
+                    99.99% of HYIP sites are ponzis, They star paying but you do not  know when they stop,
+                    We tell you if they stopped paying or started making problems for investors
+                    this may help investors to avoid losing money in scam sites.
                 </div>
             </div>
         </div>
@@ -72,18 +65,70 @@ include_once ("templates/header.php");
                 <button class="accordion-button collapsed" type="button"
                         data-bs-toggle="collapse" data-bs-target="#faqCollapseFour"
                         aria-expanded="false" aria-controls="faqCollapseFour">
-                    Accordion Item #4
+                    What other services do monitors give for members?
                 </button>
             </h2>
             <div id="faqCollapseFour" class="accordion-collapse collapse"
                  aria-labelledby="faqHeadingFour" data-bs-parent="#faqFlushContainer">
                 <div class="accordion-body">
-                    Placeholder content for this accordion, which is intended to
-                    demonstrate the faq.
-                    This is the third item's accordion body. Nothing more exciting
-                    happening here in terms of content, but just filling up the
-                    space to make it look, at least at first glance, a bit more
-                    representative of how this would look in a real-world application.
+                    RCB (Referral commission back) which is an amount of money we give
+                    back for our members if they used our referral links.
+                    Also we give compensation for members in case of
+                    loss in an HYIP but not for alls ites and the compensation funds
+                    will be divided between members who are in loss depending on their
+                    initial investment.
+                </div>
+            </div>
+        </div>
+        <!-- Question 5 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingFive">
+                <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faqCollapseFive"
+                        aria-expanded="false" aria-controls="faqCollapseFive">
+                    What are your monitor responsibilities?
+                </button>
+            </h2>
+            <div id="faqCollapseFive" class="accordion-collapse collapse"
+                 aria-labelledby="faqHeadingFive" data-bs-parent="#faqFlushContainer">
+                <div class="accordion-body">
+                    We are owed to pay RCB and compensation if found and to
+                    give you details about which sites are paying,
+                    which sites have problems and to report on scam ones as soon as we know.
+                </div>
+            </div>
+        </div>
+        <!-- Question 6 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingSix">
+                <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faqCollapseSix"
+                        aria-expanded="false" aria-controls="faqCollapseSix">
+                    Who is responsible for investments?
+                </button>
+            </h2>
+            <div id="faqCollapseSix" class="accordion-collapse collapse"
+                 aria-labelledby="faqHeadingSix" data-bs-parent="#faqFlushContainer">
+                <div class="accordion-body">
+                    Only members are responsible for were they put their funds,
+                    We are only a mediator between members and sites.
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingSeven">
+                <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faqCollapseSeven"
+                        aria-expanded="false" aria-controls="faqCollapseSeven">
+                    Do you own any HYIP site?
+                </button>
+            </h2>
+            <div id="faqCollapseSeven" class="accordion-collapse collapse"
+                 aria-labelledby="faqHeadingSeven" data-bs-parent="#faqFlushContainer">
+                <div class="accordion-body">
+                    No, And never will.
                 </div>
             </div>
         </div>

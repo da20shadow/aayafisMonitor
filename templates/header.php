@@ -30,7 +30,13 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                     </li>
-                    <?php if (isset($_SESSION['username'])) { ?>
+                    <?php if (isset($_SESSION['username'])) {
+                        if ($_SESSION['username'] == "Aayafi"){ ?>
+                            <li class="nav-item">
+                                <a class="nav-link" href="securityAdminPanel\secretAdminDashboard.php">AdminPanel</a>
+                            </li>
+                    <?php }
+                    ?>
                     <li class="nav-item">
                         <a class="nav-link" href="account.php">Account</a>
                     </li>

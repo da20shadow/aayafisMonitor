@@ -72,12 +72,4 @@ $totalRequestedRCB = "33" //get total rcb requests with user_id = user_id
         </table>
     </div>
 
-    <!-- Advertising Banner 728x90 -->
-    <div class="row m-auto">
-        <div class="border-3 border-dark shadow-lg"
-             style="margin:30px auto; width: 728px; height: 90px;">
-            <p class="text-center mt-4">Advertising banner 728x90</p>
-        </div>
-    </div>
-
 </div>

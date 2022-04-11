@@ -2,14 +2,32 @@
 $projectsArray = [
         "Project1" => ["project_id"=>"1",
             "Name"=>"ProjectName.com",
-            "RCB"=>"90%"],
+            "commission"=>"10",
+            "RCB"=>"90"],
     "Project2" => ["project_id"=>"2",
         "Name"=>"ProjectName2.com",
-        "RCB"=>"80%"],
+        "commission"=>"10",
+        "RCB"=>"80"],
     "Project3" => ["project_id"=>"3",
         "Name"=>"ProjectName3.com",
-        "RCB"=>"70%"]
+        "commission"=>"10",
+        "RCB"=>"70"]
 ];
+
+
+//global $projectRepository;
+//$projectRepository = new ProjectsRepository();
+//
+//foreach ($projectsArray as $project){
+//    $projectRepository->addProject($project);
+//}
+//
+//foreach ($projectRepository->allProjects as $project){
+//    echo "<pre>";
+//    print_r($project);
+//    echo "</pre>";
+//}
+
 $setUsername = isset($_SESSION['username']);
 ?>
 
@@ -75,12 +93,12 @@ $setUsername = isset($_SESSION['username']);
                                 <div class="row">
 
                                     <div class="col-12 col-md-5">
-                                        <h4>RCB: <?php echo $project['RCB']; ?></h4>
+                                        <h4>RCB: <?php echo $project['RCB']; ?>%</h4>
                                     </div>
                                     <div class="col-12 col-md-7">
-                                        <button class="mainBtn" data-bs-toggle="modal"
-                                                data-bs-target="#rcbFormModal<?php echo $project['project_id']; ?>">
-                                            Request RCB</button>
+                                        <a href="rcb_request.php?id=<?php echo $project['project_id']; ?>">
+                                            <button class="mainBtn">Request RCB</button>
+                                        </a>
                                     </div>
                                 </div>
 
@@ -97,54 +115,6 @@ $setUsername = isset($_SESSION['username']);
 
                     </div>
 
-                </div>
-                <!-- Modal -->
-                <div class="modal fade mt-5" id="rcbFormModal<?php echo $project['project_id']; ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="staticBackdropLabel">
-                                    <?php echo $project["Name"];?> -
-                                    <?php echo $project["RCB"];?> RCB
-                                </h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <?php if($setUsername){ ?>
-                            <div class="modal-body">
-
-                                <form id="rcbForm" class="was-validated p-3">
-                                    <div class="mb-3">
-                                        <label for="project_username" class="form-label">Username:</label>
-                                        <input type="text" class="form-control is-invalid" name="project_username"
-                                               id="project_username" placeholder="Username in the project" required/>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="deposit" class="form-label">Deposit:</label>
-                                        <input type="number" class="form-control is-invalid" name="deposit"
-                                               id="deposit" placeholder="$100" step="0.01" required/>
-                                    </div>
-                                </form>
-
-                            </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="mainBtn">Request</button>
-                                </div>
-                            <?php }else{ ?>
-                            <div class="modal-body">
-                                <h4 class="text-center text-danger">
-                                    You Should Login To Your Account In Order To Request RCB
-                                </h4>
-                            </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="mainBtn">Login</button>
-                                    <button type="button" class="mainBtn">Register</button>
-                                </div>
-                            <?php } ?>
-
-
-                        </div>
-                    </div>
                 </div>
 
             <?php
