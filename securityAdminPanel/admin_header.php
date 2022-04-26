@@ -1,5 +1,5 @@
 <?php
-require_once("../core/init.php");
+require_once("../Core/init.php");
 if (isset($_SESSION['username'])
     && $_SESSION['username'] == "someone") {
 ?>

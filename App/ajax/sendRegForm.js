@@ -18,7 +18,6 @@ regForm.addEventListener("submit",function (e){
 
         sendFormDataToPHP(url,regFormData,"successReg","login.php");
 
-
     }else{
         document.getElementById('successReg')
             .innerHTML = displayError("Registration Error! Please, try again!");

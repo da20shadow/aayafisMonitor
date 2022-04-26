@@ -99,4 +99,29 @@ footer a {
   box-shadow: 0 0 15px 0 #bcc8d2;
 }
 
+.selectStatus, .not-paying, .problem, .paying, .waiting {
+  text-align: center;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 600;
+  color: whitesmoke;
+}
+
+.waiting {
+  background: #6c757d;
+}
+
+.paying {
+  background: green;
+}
+
+.problem {
+  background: #ffc107;
+  color: #212020;
+}
+
+.not-paying {
+  background: #dc3545;
+}
+
 /*# sourceMappingURL=style.css.map */

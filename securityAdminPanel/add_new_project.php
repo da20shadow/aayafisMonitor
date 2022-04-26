@@ -41,16 +41,18 @@ include ("admin_header.php");
                        placeholder="https://sitename.com/ima/image.png" required/>
             </div>
 
-            <div class="mb-3">
-                <label for="commission" class="form-label">Affiliate Commission</label>
-                <input type="number" class="form-control is-invalid" id="commission"
-                       placeholder="15%" required/>
-            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 mb-3">
+                    <label for="commission" class="form-label">Affiliate Commission</label>
+                    <input type="number" class="form-control is-invalid" id="commission"
+                           placeholder="15%" value="<?php echo htmlspecialchars($projectAffComm); ?>" required/>
+                </div>
 
-            <div class="mb-3">
-                <label for="rcb" class="form-label">RCB</label>
-                <input type="number" class="form-control is-invalid" id="rcb"
-                       placeholder="80%" required/>
+                <div class="col-12 col-md-6 mb-3">
+                    <label for="rcb" class="form-label">RCB</label>
+                    <input type="number" class="form-control is-invalid" id="rcb"
+                           placeholder="80%" value="<?php echo htmlspecialchars($projectRCB); ?>" required/>
+                </div>
             </div>
 
             <div class="mb-3">

@@ -1,4 +1,4 @@
-<?php require_once("core/init.php"); ?>
+<?php require_once("Core/init.php"); ?>
 <!doctype html>
 <html lang="en">
 <head>

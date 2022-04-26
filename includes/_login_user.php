@@ -1,8 +1,11 @@
 <?php
-require_once ("../core/init.php");
+require_once("../Core/init.php");
 
 if (isset($_POST['email']) &&
     isset($_POST['password'])){
+
+    unset($_SESSION['user_id']);
+    unset($_SESSION['username']);
 
     $error = "";
     try{

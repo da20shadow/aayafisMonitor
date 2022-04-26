@@ -7,7 +7,7 @@ $db_name =  "aayafis_monitor";
 $charset =  "utf8mb4";
 
 $dsn = "mysql:host=$db_host;dbname=$db_name;charset=$charset";
-
+global $pdo;
 try {
     $pdo = new PDO($dsn,$db_user,$pass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
