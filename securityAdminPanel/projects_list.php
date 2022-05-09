@@ -167,6 +167,6 @@ $projects = ProjectCrud::getAllProjects();
         </table>
     </div>
 </div>
-<script src="../App/ajax/changeProjectStatus.js"></script>
-<script src="../App/ajax/sendFormDataToPHP.js"></script>
+<script src="../App/Ajax/project/changeProjectStatus.js"></script>
+<script src="../App/Ajax/sendFormDataToPHP.js"></script>
 <script src="../assets/js/notifications.js"></script>

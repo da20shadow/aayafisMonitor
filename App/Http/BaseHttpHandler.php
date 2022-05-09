@@ -4,7 +4,7 @@ namespace App\Http;
 
 use Core\TemplateInterface;
 
-abstract class UserHttpHandlerAbstract
+class BaseHttpHandler
 {
     /**
      * @var TemplateInterface

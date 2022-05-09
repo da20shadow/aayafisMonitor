@@ -1,11 +1,12 @@
-<?php
-?>
 <body>
-
 <header class="container">
+
     <nav class="navbar navbar-expand-lg">
+
         <div class="container-fluid">
+
             <a class="navbar-brand" href="#">Aayafi's Monitor</a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarToggler" aria-controls="navbarToggler"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -14,41 +15,45 @@
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                 </svg>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarToggler">
+
                 <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                     </li>
                     <?php if (isset($_SESSION['username'])) {
-                        if ($_SESSION['username'] == "Aayafi"){ ?>
+                        if ($_SESSION['username'] == "someone"){ ?>
                             <li class="nav-item">
                                 <a class="nav-link" href="securityAdminPanel\secretAdminDashboard.php">AdminPanel</a>
                             </li>
-                    <?php }
-                    ?>
-                    <li class="nav-item">
-                        <a class="nav-link" href="account.php">Account</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="edit_account.php">Edit Account</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="logout.php">Logout</a>
-                    </li>
+                        <?php }
+                        ?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="account.php">Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="edit_account.php">Edit Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="logout.php">Logout</a>
+                        </li>
                     <?php }else{ ?>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.php">Contact us</a>
                         </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.php">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="register.php">Register</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.php">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.php">Register</a>
+                        </li>
 
                     <?php } ?>
 
                 </ul>
+
                 <a href="#" class="me-5" title="Contact us on Telegram">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                          class="bi bi-telegram" viewBox="0 0 16 16">
@@ -57,6 +62,9 @@
                 </a>
 
             </div>
+
         </div>
+
     </nav>
+
 </header>

@@ -14,20 +14,6 @@ $projectsArray = [
         "RCB"=>"70"]
 ];
 
-
-//global $projectRepository;
-//$projectRepository = new ProjectsRepository();
-//
-//foreach ($projectsArray as $project){
-//    $projectRepository->addProject($project);
-//}
-//
-//foreach ($projectRepository->allProjects as $project){
-//    echo "<pre>";
-//    print_r($project);
-//    echo "</pre>";
-//}
-
 $setUsername = isset($_SESSION['username']);
 ?>
 

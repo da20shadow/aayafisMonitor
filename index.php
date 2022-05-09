@@ -1,7 +1,8 @@
 <?php
-$title = "Homepage";
-include_once ("templates/header.php");
+require_once ("projectCommon.php");
 
-include_once ("templates/investment_projects.php");
+siteHeader("Investment Projects");
 
-include_once ("templates/footer.php");
+$projectHttpHandler->home($projectService);
+
+siteFooter("getData","stat/getMonitorStats");

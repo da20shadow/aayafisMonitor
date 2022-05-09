@@ -98,8 +98,8 @@ $project = ProjectCrud::getProjectById($_GET['project_id']);
     </div>
 
 </div>
-    <script src="../App/ajax/updateProject.js"></script>
-    <script src="../App/ajax/sendFormDataToPHP.js"></script>
+    <script src="../App/Ajax/project/updateProject.js"></script>
+    <script src="../App/Ajax/sendFormDataToPHP.js"></script>
     <script src="../assets/js/notifications.js"></script>
 <?php
 }else{

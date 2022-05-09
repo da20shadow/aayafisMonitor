@@ -3,21 +3,23 @@
 namespace App\Http;
 
 use App\Data\UserDTO;
+use App\Http\BaseHttpHandler;
 use App\Service\users\UserServiceInterface;
 
-class UserHttpHandler extends UserHttpHandlerAbstract
+class UserHttpHandler extends BaseHttpHandler
 {
+
     public function register(UserServiceInterface $userService,
                                 array $formData = []){
 
         if (isset($formData['register'])){
-            $this->handleRegisterProcess($userService,$formData);
+            $this->handleRegistrationProcess($userService,$formData);
         }else {
             $this->render("users/register");
         }
     }
 
-    private function handleRegisterProcess(UserServiceInterface $userService, array $formData)
+    private function handleRegistrationProcess(UserServiceInterface $userService, array $formData)
     {
         $user = UserDTO::create(
             $formData['username'],

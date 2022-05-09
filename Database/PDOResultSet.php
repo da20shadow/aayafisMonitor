@@ -3,23 +3,28 @@
 namespace Database;
 
 use Database\DbInterfaces\ResultSetInterface;
+use Generator;
+use PDOStatement;
 
 class PDOResultSet implements ResultSetInterface
 {
     /**
-     * @var \PDOStatement
+     * @var PDOStatement
      */
-    private $pdoStatement;
+    private PDOStatement $PDOStatement;
 
-    public function __construct(\PDOStatement $PDOStatement)
+    public function __construct(PDOStatement $PDOStatement)
     {
-        $this->pdoStatement = $PDOStatement;
+        $this->PDOStatement = $PDOStatement;
     }
 
-    public function fetch($className) : \Generator
+    public function fetch($className) : Generator
     {
-        while ($row = $this->pdoStatement->fetchObject($className)){
+        while ($row = $this->PDOStatement->fetchObject($className)){
             yield $row;
         }
+    }
+    public function getSingleData(){
+        return $this->PDOStatement->fetch();
     }
 }

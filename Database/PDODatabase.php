@@ -10,7 +10,7 @@ class PDODatabase
     /**
      * @var PDO
      */
-    private $pdo;
+    private PDO $pdo;
 
     public function __construct(PDO $pdo)
     {
