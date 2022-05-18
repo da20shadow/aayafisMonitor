@@ -23,6 +23,11 @@ class ProjectService implements ProjectServiceInterface
         return $this->projectRepository->findTotalMembers();
     }
 
+    public function getMonitorStat(): array
+    {
+        return $this->projectRepository->getMonitorStatistics();
+    }
+
     public function getAll(): Generator
     {
         return $this->projectRepository->findAll();

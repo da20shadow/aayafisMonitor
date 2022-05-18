@@ -24,7 +24,13 @@ class PDOResultSet implements ResultSetInterface
             yield $row;
         }
     }
+
     public function getSingleData(){
         return $this->PDOStatement->fetch();
+    }
+
+    public function getAllData(): bool|array
+    {
+        return $this->PDOStatement->fetchAll();
     }
 }

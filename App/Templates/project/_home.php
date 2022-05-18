@@ -123,78 +123,9 @@ use App\Data\ProjectDTO;
             </div>
 
             <!--Monitor statistic -->
-            <div class="stat-box-header">
-                <h5>MONITOR STATISTIC</h5>
+            <div id="monitor_stat">
+
             </div>
-            <table style="width: 100%">
-
-                <tr>
-                    <td>Total Members:</td>
-                    <td id="totalMembers" style="text-align: right">33</td>
-                </tr>
-                <tr>
-                    <td>Total RCB Paid:</td>
-                    <td id="paidRCB" style="text-align: right">$233</td>
-                </tr>
-                <tr>
-                    <td>Total RCB Processed:</td>
-                    <td id="processedRCB" style="text-align: right">133</td>
-                </tr>
-
-            </table>
-
-            <!-- Recently paid RCB -->
-            <div class="stat-box-header">
-                <h5>Recently Paid RCB</h5>
-            </div>
-            <table style="width: 100%">
-
-                <tr>
-                    <td>Username</td>
-                    <td style="text-align: right">$3,33</td>
-                </tr>
-                <tr>
-                    <td>brave</td>
-                    <td style="text-align: right">$4,55</td>
-                </tr>
-                <tr>
-                    <td>someone</td>
-                    <td style="text-align: right">$13,37</td>
-                </tr>
-                <tr>
-                    <td>another</td>
-                    <td style="text-align: right">$3,34</td>
-                </tr>
-                <tr>
-                    <td>person</td>
-                    <td style="text-align: right">$9,92</td>
-                </tr>
-                <tr>
-                    <td>username</td>
-                    <td style="text-align: right">$3,95</td>
-                </tr>
-                <tr>
-                    <td>user13</td>
-                    <td style="text-align: right">$13,13</td>
-                </tr>
-                <tr>
-                    <td>another</td>
-                    <td style="text-align: right">$3,34</td>
-                </tr>
-                <tr>
-                    <td>person</td>
-                    <td style="text-align: right">$9,92</td>
-                </tr>
-                <tr>
-                    <td>username</td>
-                    <td style="text-align: right">$3,95</td>
-                </tr>
-                <tr>
-                    <td>user13</td>
-                    <td style="text-align: right">$13,13</td>
-                </tr>
-
-            </table>
 
             <!--Advertising banner 300x250 -->
             <div class="border border-3 mt-3 m-auto"

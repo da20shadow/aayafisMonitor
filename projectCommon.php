@@ -8,4 +8,4 @@ require_once ("common.php");
 
 $projectRepository = new ProjectRepository($db);
 $projectService = new ProjectService($projectRepository);
-$projectHttpHandler = new ProjectHttpHandler($template);
+$projectHttpHandler = new ProjectHttpHandler($template,$dataBinder);

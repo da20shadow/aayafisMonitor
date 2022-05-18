@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repository;
+namespace App\Repository\user;
 
 use App\Data\UserDTO;
 use Database\PDODatabase;
@@ -71,9 +71,17 @@ class UserRepository implements UserRepositoryInterface
     public function findUserByID(int $id): ?UserDTO
     {
         return $this->db->query(
-            "SELECT * FROM users WHERE id = :id"
+            "SELECT id AS userID,
+                            username,
+                            email,
+                            password,
+                            pm_wallet AS perfectMoney,
+                            payeer_wallet AS payeer,
+                            paid_rcb AS totalPaidRCB
+                    FROM users 
+                    WHERE id = :id"
         )->execute(array(
-            $id
+            ":id" => $id
         ))->fetch(UserDTO::class)
             ->current();
     }
@@ -81,11 +89,38 @@ class UserRepository implements UserRepositoryInterface
     public function findUserByUsername(string $username): ?UserDTO
     {
         return $this->db->query(
-            "SELECT * FROM users WHERE username = :username"
+            "SELECT id AS userID,
+                            username,
+                            email,
+                            password,
+                            pm_wallet AS perfectMoney,
+                            payeer_wallet AS payeer,
+                            paid_rcb AS totalPaidRCB
+                    FROM users 
+                    WHERE username = :username"
         )->execute(array(
-            $username
+            ":username" => $username
         ))->fetch(UserDTO::class)
         ->current();
+
+    }
+
+    public function findUserByEmail(string $email): ?UserDTO
+    {
+        return $this->db->query(
+            "SELECT id AS userID,
+                            username,
+                            email,
+                            password,
+                            pm_wallet AS perfectMoney,
+                            payeer_wallet AS payeer,
+                            paid_rcb AS totalPaidRCB
+                    FROM users 
+                    WHERE email = :email"
+        )->execute(array(
+            ":email" => $email
+        ))->fetch(UserDTO::class)
+            ->current();
 
     }
 

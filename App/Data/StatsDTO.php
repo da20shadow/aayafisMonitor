@@ -9,7 +9,7 @@ class StatsDTO
     private int $rcbProcessed;
     private array $recentlyPaidRCB;
 
-    public function create($totalMembers = 0,$paidRCB = 0,$rcbProcessed = 0,
+    public static function create($totalMembers = 0,$paidRCB = 0,$rcbProcessed = 0,
                            $recentlyPaidRCB = []): StatsDTO
     {
         return (new StatsDTO())

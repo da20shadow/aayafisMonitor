@@ -1,10 +1,9 @@
 <?php
-$title = "Login";
-include_once ("templates/header.php");
-if (isset($_SESSION['username'])) {
-    header('Location: account.php');
-}else{
-    include_once ("templates/login_page.html");
 
-    include_once ("templates/footer.php");
-}
+require_once ("userCommon.php");
+
+siteHeader("Login");
+
+$userHttpHandler->login($userService,$_POST);
+
+siteFooter();

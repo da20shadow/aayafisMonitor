@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Service\users;
+namespace App\Service\user;
 
 use App\Data\UserDTO;
-use App\Repository\UserRepositoryInterface;
+use App\Repository\user\UserRepositoryInterface;
 use App\Service\Encryption\EncryptionServiceInterface;
 use Generator;
 
@@ -43,9 +43,18 @@ class UserService implements UserServiceInterface
         return $this->userRepository->insert($userDTO);
     }
 
-    public function login(string $username, string $password): ?UserDTO
+    public function login(string $email, string $password): ?UserDTO
     {
-        // TODO: Implement login() method.
+        $userFromDB = $this->userRepository->findUserByEmail($email);
+
+        if (null === $userFromDB){
+            return null;
+        }
+
+        if (false === $this->encryptionService->verify($password,$userFromDB->getPassword())){
+            return null;
+        }
+        return $userFromDB;
     }
 
     public function currentUser(): ?UserDTO
